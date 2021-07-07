@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="TestChrome" parallel="tests">
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="username" value="Admin"></parameter>
+  <parameter name="Password" value="admin123"></parameter>
+  <classes> 
+         <class name="DataParameterization.OrangeHRMLogin"></class>
+  </classes>
+  </test> <!-- Test -->
+  
+ <test thread-count="5" name="TestFirefox">
+  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="username" value="Admin"></parameter>
+  <parameter name="Password" value="admin123"></parameter>
+  <classes>
+        <class name="DataParameterization.OrangeHRMLogin"/>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

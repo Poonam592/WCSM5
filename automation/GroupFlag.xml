@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+      <define  name="ActiTimevalid">
+      <include name ="FunctionalTestCase"></include>
+      <include name="IntegrationTestCase"></include>
+      <include name="SystemTestCase"></include>
+      </define>
+      <run>
+      <include name ="FunctionalTestCase"></include>
+      <include name="IntegrationTestCase"></include>
+     
+      </run> 
+      </groups> 
+      <classes>
+      <class name="FlagsinTestNG.FlagUsingGroup"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
